@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 const getLocalStorage = () =>{
     const response = JSON.parse(localStorage.getItem("cart"))
-    return response.cartItems
+    return response?.cartItems
 }
 
 const initialState = {
