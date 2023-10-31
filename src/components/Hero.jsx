@@ -8,10 +8,10 @@ const Hero = () => {
   return (
 <div className="hero">
     <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="lg:carousel h-[28rem] hidden  carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box ">
+        <div data-carousel="slide" className="lg:carousel h-[20rem] hidden  carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box ">
             {products.map(product=>{
                 return <div key={product.id} className="carousel-item ">
-                    <img src={product.icon.url} className="rounded-box object-cover" />
+                    <img src={product.icon.url} className="rounded-box " />
                 </div>
             })}
         </div>
