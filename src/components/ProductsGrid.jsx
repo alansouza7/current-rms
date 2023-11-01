@@ -1,4 +1,4 @@
-import { Link, useLoaderData } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { formatPrice } from '../utils'
 import {useSelector} from 'react-redux'
 

@@ -2,7 +2,6 @@ import axios from "axios";
 import SingleProductComponent from "../components/SingleProductComponent";
 
 
-
 const apiKey = "1m26tGiFj2AQmePwPR3r";
 const subdomain = "alan";
 

@@ -1,5 +1,5 @@
 import './index.css'
-import {About, Cart,  Error, HomeLayout, Landing,  Orders, Products,  SingleProduct} from './pages/index'
+import {About, Cart,  Error, HomeLayout, Landing,  Products,  SingleProduct} from './pages/index'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorElement from './components/ErrorElement';
 import {Loader as landingLoader} from './pages/Landing'
@@ -30,10 +30,6 @@ const router = createBrowserRouter([
       {
         path: 'cart',
         element: <Cart />
-      }, 
-      {
-        path: 'orders', 
-        element: <Orders />
       }, 
       {
         path: '/:id',

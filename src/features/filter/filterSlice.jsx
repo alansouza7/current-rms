@@ -1,6 +1,5 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
 import axios from "axios";
-import { useState } from 'react';
 
 
 const apiKey = "1m26tGiFj2AQmePwPR3r";

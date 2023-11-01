@@ -1,12 +1,17 @@
-import { Link, useLoaderData } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { formatPrice } from '../utils'
-
+import {useSelector} from 'react-redux'
 const ProductsList = () => {
-    const {products} = useLoaderData()
+  const {filterItems, name, group} = useSelector((state) => state.filter);
+
+
+  const newArray = filterItems?.filter(item=>{
+    return (item.name.toLowerCase().includes(name.toLowerCase()))  && (item.product_group.name.toLowerCase().includes(group.toLowerCase())) 
+  })
   
     return (
       <div className='grid gap-8 shadow'>
-          {products.map(product =>{
+          {newArray.map(product =>{
               const {id, name, rental_rate, icon, product_group} = product
               return <Link  key={id} to={`/${id}`}> 
               <div className='card shadow p-4 flex lg:flex-row gap-10 flex-wrap' >
